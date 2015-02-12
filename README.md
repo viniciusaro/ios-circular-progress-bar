@@ -40,3 +40,6 @@ self.percentageDoughnut.linePercentage = 0.02;
 self.percentageDoughnut.percentage = 0.5;
 self.percentageDoughnut.animatesBegining = NO;
 ```
+
+## Credits
+MCAvatarView is brought to you by [MyAppControls](http://www.binpress.com/profile/myappcontrols/30934) team.
