@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E6146D61919976C0036F57D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6146D51919976C0036F57D /* Foundation.framework */; };
+		6E6146D81919976C0036F57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6146D71919976C0036F57D /* CoreGraphics.framework */; };
+		6E6146DA1919976C0036F57D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6146D91919976C0036F57D /* UIKit.framework */; };
+		6E6146E01919976C0036F57D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E6146DE1919976C0036F57D /* InfoPlist.strings */; };
+		6E6146E21919976C0036F57D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6146E11919976C0036F57D /* main.m */; };
+		6E6146E61919976C0036F57D /* MCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6146E51919976C0036F57D /* MCAppDelegate.m */; };
+		6E6146E91919976C0036F57D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E6146E71919976C0036F57D /* Main.storyboard */; };
+		6E6146EC1919976C0036F57D /* MCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6146EB1919976C0036F57D /* MCViewController.m */; };
+		6E6146EE1919976C0036F57D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E6146ED1919976C0036F57D /* Images.xcassets */; };
+		6E6146F51919976C0036F57D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6146F41919976C0036F57D /* XCTest.framework */; };
+		6E6146F61919976C0036F57D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6146D51919976C0036F57D /* Foundation.framework */; };
+		6E6146F71919976C0036F57D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6146D91919976C0036F57D /* UIKit.framework */; };
+		6E6146FF1919976C0036F57D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E6146FD1919976C0036F57D /* InfoPlist.strings */; };
+		6E6147011919976C0036F57D /* PercentageDoughnutSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6147001919976C0036F57D /* PercentageDoughnutSampleTests.m */; };
+		6EF2D9B3195B0AD800FECFFD /* MCPercentageDoughnutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF2D9B2195B0AD800FECFFD /* MCPercentageDoughnutView.m */; };
+		6EF2D9BE195B0AE900FECFFD /* MCNewCustomLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF2D9B6195B0AE900FECFFD /* MCNewCustomLayer.m */; };
+		6EF2D9BF195B0AE900FECFFD /* MCNewCustomLayeredView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF2D9B8195B0AE900FECFFD /* MCNewCustomLayeredView.m */; };
+		6EF2D9C0195B0AE900FECFFD /* MCSliceLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF2D9BB195B0AE900FECFFD /* MCSliceLayer.m */; };
+		6EF2D9C1195B0AE900FECFFD /* MCUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF2D9BD195B0AE900FECFFD /* MCUtil.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E6146F81919976C0036F57D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E6146CA1919976B0036F57D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E6146D11919976C0036F57D;
+			remoteInfo = PercentageDoughnutSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6E6146D21919976C0036F57D /* PercentageDoughnutSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PercentageDoughnutSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E6146D51919976C0036F57D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6E6146D71919976C0036F57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6E6146D91919976C0036F57D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6E6146DD1919976C0036F57D /* PercentageDoughnutSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PercentageDoughnutSample-Info.plist"; sourceTree = "<group>"; };
+		6E6146DF1919976C0036F57D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6E6146E11919976C0036F57D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6E6146E31919976C0036F57D /* PercentageDoughnutSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PercentageDoughnutSample-Prefix.pch"; sourceTree = "<group>"; };
+		6E6146E41919976C0036F57D /* MCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCAppDelegate.h; sourceTree = "<group>"; };
+		6E6146E51919976C0036F57D /* MCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCAppDelegate.m; sourceTree = "<group>"; };
+		6E6146E81919976C0036F57D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6E6146EA1919976C0036F57D /* MCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCViewController.h; sourceTree = "<group>"; };
+		6E6146EB1919976C0036F57D /* MCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCViewController.m; sourceTree = "<group>"; };
+		6E6146ED1919976C0036F57D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6E6146F31919976C0036F57D /* PercentageDoughnutSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PercentageDoughnutSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E6146F41919976C0036F57D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6E6146FC1919976C0036F57D /* PercentageDoughnutSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PercentageDoughnutSampleTests-Info.plist"; sourceTree = "<group>"; };
+		6E6146FE1919976C0036F57D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6E6147001919976C0036F57D /* PercentageDoughnutSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PercentageDoughnutSampleTests.m; sourceTree = "<group>"; };
+		6EF2D9B1195B0AD800FECFFD /* MCPercentageDoughnutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCPercentageDoughnutView.h; sourceTree = "<group>"; };
+		6EF2D9B2195B0AD800FECFFD /* MCPercentageDoughnutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCPercentageDoughnutView.m; sourceTree = "<group>"; };
+		6EF2D9B4195B0AE900FECFFD /* MCCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCCore.h; sourceTree = "<group>"; };
+		6EF2D9B5195B0AE900FECFFD /* MCNewCustomLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCNewCustomLayer.h; sourceTree = "<group>"; };
+		6EF2D9B6195B0AE900FECFFD /* MCNewCustomLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCNewCustomLayer.m; sourceTree = "<group>"; };
+		6EF2D9B7195B0AE900FECFFD /* MCNewCustomLayeredView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCNewCustomLayeredView.h; sourceTree = "<group>"; };
+		6EF2D9B8195B0AE900FECFFD /* MCNewCustomLayeredView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCNewCustomLayeredView.m; sourceTree = "<group>"; };
+		6EF2D9B9195B0AE900FECFFD /* MCNewCustomLayeredView+MCCustomLayeredViewSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MCNewCustomLayeredView+MCCustomLayeredViewSubclass.h"; sourceTree = "<group>"; };
+		6EF2D9BA195B0AE900FECFFD /* MCSliceLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSliceLayer.h; sourceTree = "<group>"; };
+		6EF2D9BB195B0AE900FECFFD /* MCSliceLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSliceLayer.m; sourceTree = "<group>"; };
+		6EF2D9BC195B0AE900FECFFD /* MCUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCUtil.h; sourceTree = "<group>"; };
+		6EF2D9BD195B0AE900FECFFD /* MCUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCUtil.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E6146CF1919976C0036F57D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E6146D81919976C0036F57D /* CoreGraphics.framework in Frameworks */,
+				6E6146DA1919976C0036F57D /* UIKit.framework in Frameworks */,
+				6E6146D61919976C0036F57D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E6146F01919976C0036F57D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E6146F51919976C0036F57D /* XCTest.framework in Frameworks */,
+				6E6146F71919976C0036F57D /* UIKit.framework in Frameworks */,
+				6E6146F61919976C0036F57D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E6146C91919976B0036F57D = {
+			isa = PBXGroup;
+			children = (
+				6E6146DB1919976C0036F57D /* PercentageDoughnutSample */,
+				6E6146FA1919976C0036F57D /* PercentageDoughnutSampleTests */,
+				6E6146D41919976C0036F57D /* Frameworks */,
+				6E6146D31919976C0036F57D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E6146D31919976C0036F57D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E6146D21919976C0036F57D /* PercentageDoughnutSample.app */,
+				6E6146F31919976C0036F57D /* PercentageDoughnutSampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E6146D41919976C0036F57D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E6146D51919976C0036F57D /* Foundation.framework */,
+				6E6146D71919976C0036F57D /* CoreGraphics.framework */,
+				6E6146D91919976C0036F57D /* UIKit.framework */,
+				6E6146F41919976C0036F57D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E6146DB1919976C0036F57D /* PercentageDoughnutSample */ = {
+			isa = PBXGroup;
+			children = (
+				6E61470A191997940036F57D /* PercentageDoughnutView */,
+				6E6146E41919976C0036F57D /* MCAppDelegate.h */,
+				6E6146E51919976C0036F57D /* MCAppDelegate.m */,
+				6E6146E71919976C0036F57D /* Main.storyboard */,
+				6E6146EA1919976C0036F57D /* MCViewController.h */,
+				6E6146EB1919976C0036F57D /* MCViewController.m */,
+				6E6146ED1919976C0036F57D /* Images.xcassets */,
+				6E6146DC1919976C0036F57D /* Supporting Files */,
+			);
+			path = PercentageDoughnutSample;
+			sourceTree = "<group>";
+		};
+		6E6146DC1919976C0036F57D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E6146DD1919976C0036F57D /* PercentageDoughnutSample-Info.plist */,
+				6E6146DE1919976C0036F57D /* InfoPlist.strings */,
+				6E6146E11919976C0036F57D /* main.m */,
+				6E6146E31919976C0036F57D /* PercentageDoughnutSample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E6146FA1919976C0036F57D /* PercentageDoughnutSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E6147001919976C0036F57D /* PercentageDoughnutSampleTests.m */,
+				6E6146FB1919976C0036F57D /* Supporting Files */,
+			);
+			path = PercentageDoughnutSampleTests;
+			sourceTree = "<group>";
+		};
+		6E6146FB1919976C0036F57D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E6146FC1919976C0036F57D /* PercentageDoughnutSampleTests-Info.plist */,
+				6E6146FD1919976C0036F57D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E61470A191997940036F57D /* PercentageDoughnutView */ = {
+			isa = PBXGroup;
+			children = (
+				6EF2D9B4195B0AE900FECFFD /* MCCore.h */,
+				6EF2D9B5195B0AE900FECFFD /* MCNewCustomLayer.h */,
+				6EF2D9B6195B0AE900FECFFD /* MCNewCustomLayer.m */,
+				6EF2D9B7195B0AE900FECFFD /* MCNewCustomLayeredView.h */,
+				6EF2D9B8195B0AE900FECFFD /* MCNewCustomLayeredView.m */,
+				6EF2D9B9195B0AE900FECFFD /* MCNewCustomLayeredView+MCCustomLayeredViewSubclass.h */,
+				6EF2D9BA195B0AE900FECFFD /* MCSliceLayer.h */,
+				6EF2D9BB195B0AE900FECFFD /* MCSliceLayer.m */,
+				6EF2D9BC195B0AE900FECFFD /* MCUtil.h */,
+				6EF2D9BD195B0AE900FECFFD /* MCUtil.m */,
+				6EF2D9B1195B0AD800FECFFD /* MCPercentageDoughnutView.h */,
+				6EF2D9B2195B0AD800FECFFD /* MCPercentageDoughnutView.m */,
+			);
+			name = PercentageDoughnutView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E6146D11919976C0036F57D /* PercentageDoughnutSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E6147041919976C0036F57D /* Build configuration list for PBXNativeTarget "PercentageDoughnutSample" */;
+			buildPhases = (
+				6E6146CE1919976C0036F57D /* Sources */,
+				6E6146CF1919976C0036F57D /* Frameworks */,
+				6E6146D01919976C0036F57D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PercentageDoughnutSample;
+			productName = PercentageDoughnutSample;
+			productReference = 6E6146D21919976C0036F57D /* PercentageDoughnutSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E6146F21919976C0036F57D /* PercentageDoughnutSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E6147071919976C0036F57D /* Build configuration list for PBXNativeTarget "PercentageDoughnutSampleTests" */;
+			buildPhases = (
+				6E6146EF1919976C0036F57D /* Sources */,
+				6E6146F01919976C0036F57D /* Frameworks */,
+				6E6146F11919976C0036F57D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E6146F91919976C0036F57D /* PBXTargetDependency */,
+			);
+			name = PercentageDoughnutSampleTests;
+			productName = PercentageDoughnutSampleTests;
+			productReference = 6E6146F31919976C0036F57D /* PercentageDoughnutSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E6146CA1919976B0036F57D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = MyAppControls;
+				TargetAttributes = {
+					6E6146F21919976C0036F57D = {
+						TestTargetID = 6E6146D11919976C0036F57D;
+					};
+				};
+			};
+			buildConfigurationList = 6E6146CD1919976B0036F57D /* Build configuration list for PBXProject "PercentageDoughnutSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E6146C91919976B0036F57D;
+			productRefGroup = 6E6146D31919976C0036F57D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E6146D11919976C0036F57D /* PercentageDoughnutSample */,
+				6E6146F21919976C0036F57D /* PercentageDoughnutSampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E6146D01919976C0036F57D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E6146EE1919976C0036F57D /* Images.xcassets in Resources */,
+				6E6146E01919976C0036F57D /* InfoPlist.strings in Resources */,
+				6E6146E91919976C0036F57D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E6146F11919976C0036F57D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E6146FF1919976C0036F57D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E6146CE1919976C0036F57D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EF2D9B3195B0AD800FECFFD /* MCPercentageDoughnutView.m in Sources */,
+				6EF2D9C1195B0AE900FECFFD /* MCUtil.m in Sources */,
+				6EF2D9BF195B0AE900FECFFD /* MCNewCustomLayeredView.m in Sources */,
+				6EF2D9BE195B0AE900FECFFD /* MCNewCustomLayer.m in Sources */,
+				6E6146E61919976C0036F57D /* MCAppDelegate.m in Sources */,
+				6E6146EC1919976C0036F57D /* MCViewController.m in Sources */,
+				6EF2D9C0195B0AE900FECFFD /* MCSliceLayer.m in Sources */,
+				6E6146E21919976C0036F57D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E6146EF1919976C0036F57D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E6147011919976C0036F57D /* PercentageDoughnutSampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E6146F91919976C0036F57D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E6146D11919976C0036F57D /* PercentageDoughnutSample */;
+			targetProxy = 6E6146F81919976C0036F57D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6E6146DE1919976C0036F57D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E6146DF1919976C0036F57D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6E6146E71919976C0036F57D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E6146E81919976C0036F57D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6E6146FD1919976C0036F57D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E6146FE1919976C0036F57D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E6147021919976C0036F57D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6E6147031919976C0036F57D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E6147051919976C0036F57D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PercentageDoughnutSample/PercentageDoughnutSample-Prefix.pch";
+				INFOPLIST_FILE = "PercentageDoughnutSample/PercentageDoughnutSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6E6147061919976C0036F57D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PercentageDoughnutSample/PercentageDoughnutSample-Prefix.pch";
+				INFOPLIST_FILE = "PercentageDoughnutSample/PercentageDoughnutSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6E6147081919976C0036F57D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PercentageDoughnutSample.app/PercentageDoughnutSample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PercentageDoughnutSample/PercentageDoughnutSample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PercentageDoughnutSampleTests/PercentageDoughnutSampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6E6147091919976C0036F57D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PercentageDoughnutSample.app/PercentageDoughnutSample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PercentageDoughnutSample/PercentageDoughnutSample-Prefix.pch";
+				INFOPLIST_FILE = "PercentageDoughnutSampleTests/PercentageDoughnutSampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E6146CD1919976B0036F57D /* Build configuration list for PBXProject "PercentageDoughnutSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E6147021919976C0036F57D /* Debug */,
+				6E6147031919976C0036F57D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E6147041919976C0036F57D /* Build configuration list for PBXNativeTarget "PercentageDoughnutSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E6147051919976C0036F57D /* Debug */,
+				6E6147061919976C0036F57D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E6147071919976C0036F57D /* Build configuration list for PBXNativeTarget "PercentageDoughnutSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E6147081919976C0036F57D /* Debug */,
+				6E6147091919976C0036F57D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E6146CA1919976B0036F57D /* Project object */;
+}

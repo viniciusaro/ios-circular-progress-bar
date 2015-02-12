@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="MCViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Xee-yn-MLf">
+                                <rect key="frame" x="69" y="511" width="182" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.0" green="0.82653061220000001" blue="0.028570420219335431" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="widthSliderDidChangeValue:" destination="vXZ-lx-hvc" eventType="valueChanged" id="nWY-Dr-PBC"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="c91-0H-zQU">
+                                <rect key="frame" x="69" y="473" width="182" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.0" green="0.82653061220000001" blue="0.028570420219335431" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="percentageSliderDidChangeValue:" destination="vXZ-lx-hvc" eventType="valueChanged" id="fRx-EW-3id"/>
+                                </connections>
+                            </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ORV-aT-IBh">
+                                <rect key="frame" x="204" y="430" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="showRoundedBackgroundImg:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Bz8-SZ-0qE"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rounded background img" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="128" translatesAutoresizingMaskIntoConstraints="NO" id="xtT-WV-8Gq">
+                                <rect key="frame" x="68" y="420" width="128" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4ZY-JA-6WP">
+                                <rect key="frame" x="204" y="390" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="showGradient:" destination="vXZ-lx-hvc" eventType="valueChanged" id="VLQ-Dk-wR2"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gradient" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="128" translatesAutoresizingMaskIntoConstraints="NO" id="suY-Hr-LBL">
+                                <rect key="frame" x="68" y="390" width="128" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c91-0H-zQU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="71" id="2kp-fa-fPz"/>
+                            <constraint firstItem="Xee-yn-MLf" firstAttribute="leading" secondItem="c91-0H-zQU" secondAttribute="leading" id="3Qg-sz-87X"/>
+                            <constraint firstItem="Xee-yn-MLf" firstAttribute="trailing" secondItem="c91-0H-zQU" secondAttribute="trailing" id="H5Q-nH-gQl"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Xee-yn-MLf" secondAttribute="bottom" constant="27" id="YjW-Zp-viM"/>
+                            <constraint firstItem="Xee-yn-MLf" firstAttribute="top" secondItem="c91-0H-zQU" secondAttribute="bottom" constant="8" symbolic="YES" id="tBy-Tt-jag"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="percentageSlider" destination="c91-0H-zQU" id="Sok-TU-ARr"/>
+                        <outlet property="widthSlider" destination="Xee-yn-MLf" id="mcL-tu-0RO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GoQ-eI-bWl">
+            <objects>
+                <viewController storyboardIdentifier="progressContent" id="zDe-rq-E6f" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2VV-0P-evT"/>
+                        <viewControllerLayoutGuide type="bottom" id="Een-KS-Xra"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w8y-M8-IUR">
+                        <rect key="frame" x="0.0" y="0.0" width="258" height="258"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wm5-Ph-Kmf">
+                                <rect key="frame" x="59" y="86" width="179" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="2Wm-EA-RFE"/>
+                                    <constraint firstAttribute="width" constant="179" id="HER-6W-GkM"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="2,5K">
+                                        <attributes>
+                                            <color key="NSColor" red="0.50715481505102034" green="0.50715481505102034" blue="0.50715481505102034" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="52" name="Futura-CondensedMedium"/>
+                                            <font key="NSOriginalFont" size="64" name="Futura-CondensedMedium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" views">
+                                        <attributes>
+                                            <color key="NSColor" red="0.50715481505102034" green="0.50715481505102034" blue="0.50715481505102034" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="30" name="Futura-CondensedMedium"/>
+                                            <font key="NSOriginalFont" size="30" name="Futura-CondensedMedium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headphone4" translatesAutoresizingMaskIntoConstraints="NO" id="3sk-Jb-BcQ">
+                                <rect key="frame" x="104" y="147" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="7Dg-5G-QLB"/>
+                                    <constraint firstAttribute="height" constant="50" id="rX8-5j-Vg0"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="wm5-Ph-Kmf" secondAttribute="centerY" constant="11.5" id="5kd-4C-VEs"/>
+                            <constraint firstItem="3sk-Jb-BcQ" firstAttribute="top" secondItem="wm5-Ph-Kmf" secondAttribute="bottom" constant="-2" id="ESZ-wK-ayH"/>
+                            <constraint firstItem="wm5-Ph-Kmf" firstAttribute="centerX" secondItem="3sk-Jb-BcQ" secondAttribute="centerX" constant="19.5" id="R3y-Rl-Zzv"/>
+                            <constraint firstAttribute="centerX" secondItem="wm5-Ph-Kmf" secondAttribute="centerX" constant="-19.5" id="fFf-KW-dIr"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="258" height="258"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s1h-34-bQL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="529" y="243"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="headphone4" width="64" height="64"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
