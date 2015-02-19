@@ -42,4 +42,4 @@ self.percentageDoughnut.animatesBegining = NO;
 ```
 
 ## Credits
-MCAvatarView is brought to you by [MyAppControls](http://www.binpress.com/profile/myappcontrols/30934) team.
+Brought to you by [MyAppControls](http://www.binpress.com/profile/myappcontrols/30934) team.
