@@ -47,5 +47,7 @@ Brought to you by [MyAppControls](http://www.binpress.com/profile/myappcontrols/
 ## Similar Projects
 
 [iOS Bar Chart](https://github.com/vinicius-a-ro/ios-bar-chart-view)
+
 [iOS Simple Color Picker](https://github.com/vinicius-a-ro/ios-color-picker)
+
 [iOS Pie Chart](https://github.com/vinicius-a-ro/ios-pie-chart-view)
