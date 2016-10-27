@@ -10,7 +10,7 @@
 #import "MCNewCustomLayeredView.h"
 #import "MCUtil.h"
 
-@interface MCNewCustomLayer()
+@interface MCNewCustomLayer() <CAAnimationDelegate>
 
 @property (nonatomic) BOOL isCopy;
 @property (nonatomic) BOOL hasCopy;

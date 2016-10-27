@@ -197,7 +197,7 @@
     return self.containerLayer.sublayers;
 }
 
-- (MCNewCustomLayer*)getItemAtIndex:(NSInteger)index {
+- (CALayer*)getItemAtIndex:(NSInteger)index {
     return [self.containerLayer.sublayers objectAtIndex:index];
 }
 
