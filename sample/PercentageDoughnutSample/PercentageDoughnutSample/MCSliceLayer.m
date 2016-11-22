@@ -9,7 +9,7 @@
 #import <CoreText/CoreText.h>
 #import "MCSliceLayer.h"
 
-@interface MCSliceLayer()
+@interface MCSliceLayer() <CAAnimationDelegate>
 
 @property (nonatomic) CGFloat lineWidth;
 
@@ -17,6 +17,8 @@
 
 @implementation MCSliceLayer
 
+@dynamic value;
+@dynamic lineWidth;
 @dynamic startAngle;
 @dynamic endAngle;
 @dynamic center_x;
@@ -380,7 +382,7 @@ typedef UIColor * (^floatColorBlock)(CGFloat);
     
     if (self.showText)
     {
-        if (fabsf(self.startAngle-self.endAngle) > DEG2RAD(20)) {
+        if (fabs(self.startAngle-self.endAngle) > DEG2RAD(20)) {
             self.textLabel.bounds = CGRectMake(0, 0,
                                                width,
                                                self.externalRadius*0.5);
